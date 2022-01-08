@@ -1,0 +1,104 @@
+.login-container{
+    margin: auto;
+    width: 500px;
+    padding: 40px;
+}
+.usuario{
+    display: flex;
+    justify-content: center;
+}
+.password{
+    display: flex;
+    justify-content: center;
+}
+.login{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.user-label{
+    width: 100px;
+}
+
+.user-input{
+    width: 100px;
+}
+
+.password-label{
+    width: 100px;
+}
+
+.password-input{
+    width: 100px;
+}
+.none{
+    display: none;
+}
+
+.flex{
+    display: flex;
+}
+
+
+#play-container{
+    width: 1400px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.play-again-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-play-container, .ai-container{
+    display: flex;
+    align-items:center;
+}
+
+.my-play-container img{
+    border: 1px solid red;
+    height: 100px;
+}
+
+.ai-container img{
+    border: 1px solid red;
+    height: 100px;
+}
+
+#my-selection{
+    margin: 0px 0px 0px 50px ;
+    display: inline-block;
+    padding: 20px;
+}
+
+#ai-selection{
+    margin: 0px 50px 0px 0px ;
+    display: inline-block;
+    padding: 20px;
+}
+
+
+#my-selection img, #ai-selection img{
+    padding: 20px;
+}
+
+#my-selection div, #ai-selection div{
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+    border: 1px solid red; 
+}
+
+.my-selection-inner, .ai-selection-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 72px;
+}
+
+.button{
+    padding: 20px;
+}
