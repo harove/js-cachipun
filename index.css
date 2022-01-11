@@ -1,4 +1,4 @@
-.login-container{
+#login-container{
     margin: auto;
     width: 500px;
     padding: 40px;
@@ -101,4 +101,24 @@
 
 .button{
     padding: 20px;
+}
+
+.winner{
+    background-color: greenyellow;
+}
+
+.score, .header{
+    text-align: center;
+}
+
+#stats-container{
+    width: 400px;
+    text-align: center;
+    margin: auto;
+}
+
+.divider{
+    width: 600px;
+    margin: auto;
+    border: 1px solid black;
 }

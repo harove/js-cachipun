@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./index.css"></link>
 </head>
 <body>
-    <div class="login-container">
+    <div id="login-container">
         <div class="usuario">
             <div class="user-label">
                 <label>
@@ -35,19 +35,24 @@
             </button>
         </div>
     </div>
+
+    <div id="header-container" class="header none">
+        <h1>CACHIPÚN</h1>
+    </div>
     <div id="play-container" class="none">
         <div class="my-play-container">
-            <img src="./images/left-pp.jpg" alt="leftHandPaper" width="100px" onclick="onChooseMyPlay('left-pp')">
-            <img src="./images/left-st.jpg" alt="leftHandStone" width="100px" onclick="onChooseMyPlay('left-st')">
-            <img src="./images/left-sc.jpg" alt="leftHandScisor" width="100px" onclick="onChooseMyPlay('left-sc')">
+            <img src="./images/left-pp.jpg" alt="leftHandPaper" width="100px" onclick="onChooseMyPlay('pp')">
+            <img src="./images/left-st.jpg" alt="leftHandStone" width="100px" onclick="onChooseMyPlay('st')">
+            <img src="./images/left-sc.jpg" alt="leftHandScisor" width="100px" onclick="onChooseMyPlay('sc')">
             <div id="my-selection">
                 <div class="my-selection-inner">?</div>
             </div>
         </div>
 
+
         <div class="play-again-container">
-            <button class="button" onclick="onPlayAgain()">
-                play again
+            <button id="playAgain" class="button" onclick="onPlayAgain()">
+                Selecciona tu jugada a la izquierda
             </button>
         </div>
 
@@ -61,6 +66,17 @@
             <img src="./images/right-sc.jpg" alt="leftHandPaper" width="100px">
         </div>
     </div>
+    <div id="score-container" class="score none">
+        <h3>Game: <span id="game">1</span> Round: <span id="round">1</span></h3>
+        <h1>Score: <span id="score">0</span></h1>
+    </div>
+    <div id="divider" class="divider none">
+    </div>
+    <div id="stats-container" class="header none">
+        <h1>Últimos 5 juegos</h1>
+        <ul id="lastGamesList"></ul>
+    </div>
+
 
 
 
