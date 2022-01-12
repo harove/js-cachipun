@@ -118,13 +118,11 @@ function onChooseMyPlay(selection){
 }
 
 function onPlayAgain(){
+    console.log(round)
     if (round > RONDAS){
         score=0
         round=1
-        document.getElementById("playAgain").innerHTML= "Play Again"
-    }else{
         document.getElementById("playAgain").innerHTML= "Selecciona tu jugada a la izquierda"
-        document.getElementById("playAgain").classList.remove("highlighted")
     }
     document.getElementById("game").innerHTML=game
     document.getElementById("round").innerHTML=round
@@ -133,6 +131,8 @@ function onPlayAgain(){
     document.getElementById("ai-selection").classList.remove('winner')
     document.getElementById("my-selection").innerHTML = `<div class="my-selection-inner">?</div>`
     document.getElementById("ai-selection").innerHTML = `<div class="ai-selection-inner">?</div>`
+    document.getElementById("playAgain").innerHTML= "Selecciona tu jugada a la izquierda"
+    document.getElementById("playAgain").classList.remove("highlighted")
     playAgain = true
 }
 
