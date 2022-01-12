@@ -107,7 +107,7 @@
     background-color: greenyellow;
 }
 
-.score, .header{
+.score, .header, .round{
     text-align: center;
 }
 
@@ -121,4 +121,25 @@
     width: 600px;
     margin: auto;
     border: 1px solid black;
+}
+
+.loginValidationMsg{
+    display: flex;
+    justify-content: center;
+    color:red;
+}
+
+.tip{
+    display: flex;
+    justify-content: center;
+}
+
+.me, .ai{
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.highlighted{
+    background-color:springgreen;
 }

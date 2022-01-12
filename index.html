@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="./index.css"></link>
 </head>
 <body>
+    <div id="header-container" class="header">
+        <h1>CACHIPÚN</h1>
+    </div>
+    <div id="tip" class="tip">
+        usuario: edgar , password:haro
+    </div>
     <div id="login-container">
         <div class="usuario">
             <div class="user-label">
@@ -34,13 +40,20 @@
                 Login
             </button>
         </div>
+        <div class="loginValidationMsg">
+            <span id="loginValidationMsg"></span>
+        </div>
     </div>
 
-    <div id="header-container" class="header none">
-        <h1>CACHIPÚN</h1>
+    <div id="round-container" class="round none">
+        <h3>Game: <span id="game">1</span> Round: <span id="round">1</span></h3>
     </div>
+
     <div id="play-container" class="none">
         <div class="my-play-container">
+            <div class="me">
+                Me
+            </div>
             <img src="./images/left-pp.jpg" alt="leftHandPaper" width="100px" onclick="onChooseMyPlay('pp')">
             <img src="./images/left-st.jpg" alt="leftHandStone" width="100px" onclick="onChooseMyPlay('st')">
             <img src="./images/left-sc.jpg" alt="leftHandScisor" width="100px" onclick="onChooseMyPlay('sc')">
@@ -55,7 +68,7 @@
                 Selecciona tu jugada a la izquierda
             </button>
         </div>
-
+ 
 
         <div class="ai-container">
             <div id="ai-selection">
@@ -64,10 +77,12 @@
             <img src="./images/right-pp.jpg" alt="leftHandPaper" width="100px">
             <img src="./images/right-st.jpg" alt="leftHandPaper" width="100px">
             <img src="./images/right-sc.jpg" alt="leftHandPaper" width="100px">
+            <div class="ai">
+                AI
+            </div>
         </div>
     </div>
     <div id="score-container" class="score none">
-        <h3>Game: <span id="game">1</span> Round: <span id="round">1</span></h3>
         <h1>Score: <span id="score">0</span></h1>
     </div>
     <div id="divider" class="divider none">
