@@ -6,7 +6,7 @@ let score = 0
 let round = 1
 let game = 1
 let lastGames = []
-const RONDAS = 3
+const RONDAS = 10
 let loginValidationMsg = ""
 
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -118,7 +118,6 @@ function onChooseMyPlay(selection){
 }
 
 function onPlayAgain(){
-    console.log(round)
     if (round > RONDAS){
         score=0
         round=1
